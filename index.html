@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" href="logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="nav-logo"><span class="logo-first-letter">S</span>afuvan  K S</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Sfvn_resume (1).pdf" target="_blank">Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>SAFUVAN</span><br>From Bengaluru, Karnataka</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <!-- Your profile image -->
+                        <img src="mobilesafu.png" alt="Your Name" class="profile-image">
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p>
+A recent Computer Science and Engineering graduate with a solid foundation in software development and contemporary programming practices. I am enthusiastic about applying my technical skills to real-world projects while continuously expanding my knowledge of new technologies. I am seeking an opportunity in a forward-thinking, technology-driven organization where I can contribute meaningfully, grow professionally, and be part of impactful, innovative solutions.
+</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Internship</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span><br>OOP, file handling, logical problem solving, and exception handling.</li>
+                                <li><span>SQL</span><br>Query writing, joins, grouping, and working with Oracle SQL*Plus.</li>
+                                <li><span>Web Development</span><br>HTML, CSS, JavaScript, Bootsrap, DOM manipulation, responsive layouts.</li>
+                                <li><span>Software/Tools Used</span><br>Oracle SQL*Plus (10g-12c), Windows 11, VS Code, GitHub</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Full Stack with Python Intern</span><br>Cloud Innovations</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bachelor of Technology in Computer Science and Engineering</span><br>CGPA: 8.15<br>Universal Engineering College, Thrissur<br>2021-2025</li>
+                                <li><span>Higher Secondary Education</span><br>Percentage: 97.6<br>Chentrappinni HSS, Thrissur<br>2019-2021</li>
+                                <li><span>Secondary Education</span><br>Percentage: 98<br>Chentrappinni HS, Thrissur<br>2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="sub-title">My Projects</h2>
+                <div class="projects-list">
+                    <div class="project-card">
+                        <h3>Youtube transcript summarizer</h3>
+                        <p>A web app that extracts and summarizes YouTube video transcripts using Python and Django, featuring a clean, responsive front-end built with HTML, CSS, and JavaScript for fast, user-friendly content analysis.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Automated Aggression And Damage Monitoring System For Educational Institution(AADMS)</h3>
+                        <p>Developed using OpenCV and 3D-CNN, achieving upto 80 percentage accuracy in real-time surveillance and alert generation for enhancing safety in educational institutions.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>Developed a responsive personal portfolio using HTML, CSS, and JavaScript highlighting technical skills and projects.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Move It! Bootstrap-Built Relocation Web App</h3>
+                        <p>Built a responsive moving-services website using Bootstrap, showcasing key offerings like local and cross-country moves, packing, and customer support. Focused on clarity and usability through a clean, engaging UI using Bootstrap's grid and components.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="sub-title">Contact Me</h2>
+                <div class="row">
+                    <div class="contact-left">
+                        <p><i class="fas fa-paper-plane"></i> safuvansiddiqu@gmail.com</p>
+                        <div class="social-icons">
+                            <a class="social-link github" href="https://github.com/sfvnsiddiq" title="GitHub" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a class="social-link linkedin" href="https://www.linkedin.com/in/safuvan-k-s" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a class="social-link whatsapp" href="https://wa.me/917994557315" title="WhatsApp" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <a href="Sfvn_resume (1).pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+            <!-- Footer -->
+            <footer>
+                <div class="container">
+                    <p class="copyright">copyright &copy; Safuvan K S. Made with <i class="fas fa-heart"></i></p>
+                </div>
+            </footer>
+    
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+    
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+    
+            const scriptURL = '<https://script.google.com/macros/s/AKfycbz-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9-p9/exec>'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+    
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+        </body>
+    </html>
